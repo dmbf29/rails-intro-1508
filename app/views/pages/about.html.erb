@@ -1,0 +1,11 @@
+<div class="container mt-3">
+  <h1>About</h1>
+  <p>DONT PUT HTML / HEAD / BODY tags inside of your views!</p>
+  <!-- Link with just text -->
+  <%= link_to 'Home', root_path, class: 'btn btn-primary'  %>
+  <!-- Link with HTML -->
+  <%= link_to root_path, class: 'btn btn-primary' do %>
+    <i class="fa-solid fa-house"></i>
+  <% end %>
+  <%= link_to 'Google', 'https://www.google.com'  %>
+</div>
